@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="colorback">
+      <div class="contenedor-busqueda">
+      <img src="assets/icon/Udemy.png" style="width: 120px; height: auto;"/> 
+      <ion-searchbar placeholder="Buscar cualquier cosa" class="mi-busqueda" style="width: 450px; height: auto;"></ion-searchbar>
+      <ion-button fill="clear"><img src="assets/Carrito.jpg" style="width: 30px; height: auto;"/></ion-button>
+      <ion-button fill="outline" class="boton">Iniciar Sesión</ion-button>
+      <ion-button fill="outline" class="colorbackb">Regístrate</ion-button>
+      <ion-button fill="outline" class="boton"><img src="assets/Mundo.png" style="width: 16px; height: auto;"/></ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container"><!-- Imagen principal-->
+    <div class="image-box">
+      <img src="assets/Udemyper.png">
+      <div class="text-box">
+        <h1>Sigue avanzando</h1>
+        <p>Aprende las habilidades que necesitas para dar el siguiente paso y todos los demás.
+           Cursos desde solo 149 MX$ hasta el 24 de septiembre.</p>
+      </div>
+    </div>
+  </div>
+  
+  <app-empresas></app-empresas> <!--Empresas-->
+  <app-seleccioncursos></app-seleccioncursos> <!--seleccioncursos-->
+  <app-estudiantes></app-estudiantes> <!--lo que los estudiantes estan viendo-->
+  <app-categorias></app-categorias> <!--categorias principales-->
+  <app-destacados></app-destacados> <!--otros temas destacados-->
+  <app-business></app-business> <!--Udemy Business e instructor-->
+  <app-piepag></app-piepag> <!--pie de pagina-->
+</ion-content>

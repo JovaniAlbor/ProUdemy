@@ -1,0 +1,26 @@
+ion-card{
+    --background: white;
+    --ion-color-background: white;
+}
+ion-card-title{
+    text-align: center;
+    margin-bottom:16px;
+    font-family: 'Arial';
+    color: black;
+    font-weight: bold; // O puedes usar un valor numérico como 700
+}
+.logo-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo-img {
+    background: white;
+    max-width: 125px;
+    height: auto;
+    border-radius: 10px;
+  }
+  

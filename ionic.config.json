@@ -1,0 +1,7 @@
+{
+  "name": "Proudemy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

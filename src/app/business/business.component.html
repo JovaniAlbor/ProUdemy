@@ -1,0 +1,32 @@
+<ion-card >
+  <ion-card-content>
+    <ion-list *ngFor="let bus of business">
+      <ion-item >
+<img  src="./assets/img/Business.jpg" slot="start" class="imagenbusiness"/>
+<div class="text-container">
+  <h2 class="h2">{{bus.titulobus}}</h2>
+  <p class="p">{{bus.punto1}}</p>
+    <p class="p">{{bus.punto2}}</p>
+      <p class="p">{{bus.punto3}}</p>
+      <ion-button fill="outline" class="colorbackb">Consigue UdemyBusiness</ion-button>
+      <ion-button fill="outline" class="boton">Mas informacion</ion-button>
+</div>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+<ion-card >
+  <ion-card-content>
+    <ion-list *ngFor="let bus1 of business2">
+      <ion-item >
+<img  src="./assets/img/instructor.jpg" slot="start" class="imagenbusiness"/>
+<div class="text-container">
+  <h2 class="h2">{{bus1.titulobus1}}</h2>
+  <p class="p">{{bus1.punto11}}</p>
+      <ion-button fill="outline" class="colorbackb">ConsigueUdemyBusiness</ion-button>
+</div>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>

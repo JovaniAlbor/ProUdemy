@@ -1,0 +1,22 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title class="titulocat">Temas destacados por categoria</ion-card-title>
+  </ion-card-header>
+ 
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="4" size-lg="3" *ngFor="let dest of destacados">
+        <ion-card-title class="titulocat">{{dest.titulocat}}</ion-card-title>
+        <ion-card-subtitle class="subcat">{{dest.subcat}}
+          <div class="learn">{{dest.NumApren}}</div>
+          <div>{{dest.subcat1}}</div>
+          <div class="learn">{{dest.NumApren1}}</div>
+          <div>{{dest.subcat2}}</div>
+          <div class="learn">{{dest.NumApren2}}</div>
+        </ion-card-subtitle>
+      </ion-col>
+      </ion-row>
+      </ion-grid>
+      <ion-button class="boton"> Descubrir mas temas </ion-button>
+</ion-card-content>

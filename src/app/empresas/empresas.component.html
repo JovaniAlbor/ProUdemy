@@ -1,0 +1,18 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Más de 16 000 empresas y millones de estudiantes de todo el mundo confían en nosotros</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <!-- Iterar sobre el arreglo de empresas -->
+        <ion-col size="6" size-md="4" size-lg="3" *ngFor="let empresa of empresas">
+          <div class="logo-container">
+            <img [src]="empresa.logo" alt="{{ empresa.nombre }}" class="logo-img"/>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

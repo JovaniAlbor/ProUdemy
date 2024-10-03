@@ -1,0 +1,47 @@
+<ion-card-header>
+    <ion-card-title div class="seleccioncursosTi">Una amplia seleccion de cursos</ion-card-title>
+        <ion-card-subtitle div class="seleccioncursosSub">Elige entre mas de 250 000 cursos de video en linea con nuevo contenido cada mes</ion-card-subtitle>
+    
+    </ion-card-header>
+
+<ion-card-content>
+    <ion-button>Python</ion-button>
+    <ion-button>Microsoft Excel</ion-button>
+    <ion-button>Desarrollo web</ion-button>
+    <ion-button>Javascript</ion-button>
+    <ion-button>Ciencias de la informacion</ion-button>
+    <ion-button>Amazon AWS</ion-button>
+    <ion-button>Dibujo</ion-button>
+
+</ion-card-content>
+
+<div class="Cuadro">
+<ion-card-header>
+    <ion-card-title div class="seleccioncursosTi">Amplía tus oportunidades profesionales con Python</ion-card-title>
+        <ion-card-subtitle div class="seleccioncursosSub">Tanto si trabajas en el segmento del aprendizaje automático 
+            o de las finanzas como si deseas desarrollar tu carrera en ciencias de datos o desarrollo web, Python es una 
+            de las habilidades más importantes que puedes aprender. La sencilla sintaxis de Python es especialmente adecuada para equipos de escritorio, web y</ion-card-subtitle>
+    </ion-card-header>
+<ion-card-content>
+    <ion-button div class="boton">Explorar Python</ion-button>
+    <ion-grid>
+        <ion-row>
+          <ion-col size-sm="12" size-md="6" size-lg="4" size-xl="3" *ngFor="let cur of cursos">
+            
+            <ion-card>
+              <a href="/hipervinculos" style="text-decoration: none;">
+              <img alt="" src="{{cur.imagencurso}}" />
+              <ion-card-header>
+                <ion-card-title div class="seleccioncursosTi">{{cur.nombre}}</ion-card-title>
+                <ion-card-subtitle div class="seleccioncursosSub">
+                    <div>{{ cur.descripcion }}</div>
+                    <div>{{ cur.puntuacion }}</div>
+                    <div>{{ cur.precio }}</div>
+                  </ion-card-subtitle>
+              </ion-card-header>  
+              </a>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-card-content>

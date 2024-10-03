@@ -1,0 +1,13 @@
+.seleccioncursosTi{
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    justify-content:first baseline;
+    font-weight: bold; // O puedes usar un valor numérico como 700
+      }
+ion-card{
+        --background:#ffffff;
+        --color: rgb(0, 0, 0);              /* Cambia el color del texto */
+        font-size: 10px;            /* Cambia el tamaño de fuente */
+      height: 350px; /* Altura fija para todas las tarjetas */
+      border: #ffffff;
+      }
